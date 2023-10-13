@@ -1,0 +1,126 @@
+body {
+    background-image: linear-gradient(black,grey,black);
+    font-weight: 600;
+    font-family:initial;
+    font-size: 18px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ 
+}
+
+
+h1 {
+    background-image: linear-gradient(rgb(155, 80, 86),rgb(247, 194, 82));
+    border: 2px solid black;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.bcskep img {
+    width: 41%;
+    display: block;
+    border-radius: 50px;
+    margin: auto;
+    padding: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.item {
+    background-image: linear-gradient(rgba(211, 211, 90, 0.637),rgb(245, 198, 71),grey);
+    color: black;
+    padding: 20px;
+    border: 2px solid red;
+    border-radius: 8px;
+    margin: 10px;
+}
+
+@media only screen and (max-width:720px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+    .menu nav {
+        display: grid;
+        justify-content: center;
+    }
+
+    .menu nav a {
+        padding: 5px 50px ; 
+    }
+}
+
+.item .gomb a {
+    display: block;
+        margin-left: auto;
+        margin-right: auto;
+    background-color: antiquewhite;
+    border: 1px solid #000;
+    padding: 20px 0 20px 0; 
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 15px;
+    font-weight: 500;
+    font-style: italic;
+}
+.item, .gomb a:hover {
+    background-color:gray;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.active {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+background-color: antiquewhite;
+border: 1px solid #000;
+padding: 20px 0 20px 0; 
+text-align: center;
+text-decoration: none;
+font-size: 18px;
+color: #000;
+margin-bottom: 15px;
+font-weight: 500;
+font-style: italic;
+}
+
+.menu nav {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(241, 241, 103);
+}
+
+.menu nav a {
+    background-color: lightgreen;
+    border: 1px solid  black;
+    border-radius: 12px;
+    padding: 10px;
+    margin: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    font-style: italic;
+    text-decoration: none;
+}
+
+.menu nav a:hover {
+    background-color: grey;
+    color: beige;
+    font-weight: 500;
+    font-style: italic;
+    box-shadow: 20px 7px 10px rgb(0, 0, 0,0.15);
+}
+
+.kaki {
+    border: 2px solid #000;
+    background-color: antiquewhite;
+    text-align: center;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 30px;
+}
